@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the body takes the full viewport height */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    flex: 1;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.detel {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.detel p {
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .profile-pic {
+    left: 45%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Resize person.jpeg */
+.profile-pic {
+    width: 200px;  /* Adjust width */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: contain;  /* Ensure the image doesn't stretch */
+    border-radius: 10px;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons { 
+    margin-top: 10px;   
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 20px; /* Adds spacing between icons */
+}
+
+.social-icons a {
+    display: inline-block;  
+}
+
+.github-icon img {
+    width: 32px; 
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin-top: 4px;  /* Adjust this value to move the icon down */
+}
+
+.linkedin-icon img {
+    width: 45px;  /* Slightly larger to balance visual appearance */
+    height: 40px; 
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Enlarges on hover */
+}
+
+/* Ensure the body takes full height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the body takes the full viewport height */
+}
+
+/* Center the grid and avoid overlap */
+.projects-container-wrapper {
+    display: flex;
+    justify-content: center;  /* Centers the grid horizontally */
+    padding: 15px;
+    width: 100%;
+    margin-top: 30px; /* Adds some space from the top */
+}
+
+/* Make sure the grid doesn't stretch too far */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates 3 columns */
+    grid-gap: 20px;  /* Adds space between the projects */
+    max-width: 1200px;  /* Limit the width to a maximum size */
+    width: 100%;
+    padding-bottom: 30px; /* Adds some padding to the bottom to avoid touching footer */
+}
+
+/* Individual project boxes */
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px; /* Adjust the height to fit your project images */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project p {
+    padding: 15px;
+    font-weight: bold;
+    color: #212121;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.project:hover img {
+    transform: scale(1.05); /* Slightly zoom in the image on hover */
+}
+
+.project a {
+    text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
